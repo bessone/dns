@@ -2,6 +2,9 @@
 
 namespace Spatie\Dns\Support;
 
+const DNS_DS = 43;
+const DNS_DNSKEY = 48;
+
 class Types
 {
     public static function getTypes()
@@ -16,6 +19,8 @@ class Types
             DNS_MX => 'MX',
             DNS_SRV => 'SRV',
             DNS_TXT => 'TXT',
+            DNS_DS => 'DS',
+            DNS_DNSKEY => 'DNSKEY',
             // DNS_NAPTR => 'NAPTR',
         ];
         // @see https://bugs.php.net/bug.php?id=75909
