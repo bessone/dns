@@ -2,8 +2,10 @@
 
 namespace Spatie\Dns\Support;
 
-const DNS_DS = 43;
-const DNS_DNSKEY = 48;
+// Define DNS type constants not available in PHP by default
+// https://bugs.php.net/bug.php?id=65343
+const DNS_DS = 2097152; // 43
+const DNS_DNSKEY = 4194304; // 48
 
 class Types
 {
