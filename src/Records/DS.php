@@ -11,8 +11,11 @@ namespace Spatie\Dns\Records;
 class DS extends Record
 {
     protected int $keytag;
+
     protected int $algorithm;
+
     protected int $digesttype;
+
     protected string $digest;
 
     public static function parse(string $line): ?self

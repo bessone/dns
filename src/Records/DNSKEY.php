@@ -11,8 +11,11 @@ namespace Spatie\Dns\Records;
 class DNSKEY extends Record
 {
     protected int $flags;
+
     protected int $protocol;
+
     protected int $algorithm;
+
     protected string $publickey;
 
     public static function parse(string $line): ?self
