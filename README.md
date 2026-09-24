@@ -45,8 +45,9 @@ composer require spatie/dns
 
 ## Usage
 
-The class can get these record types: `A`, `AAAA`, `CNAME`, `NS`, `PTR`, `SOA`, `MX`, `SRV`, `TXT`, `DNSKEY`, `CAA`, `NAPTR`.
+The class can get these record types: `A`, `AAAA`, `CNAME`, `NS`, `PTR`, `SOA`, `MX`, `SRV`, `TXT`, `DS`, `DNSKEY`, `CAA`, `NAPTR`.
 
+(`DS` and `DNSKEY` record types are only available with [dig](#under-the-hood))
 ```php
 use Spatie\Dns\Dns;
 
