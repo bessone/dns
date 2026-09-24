@@ -4,7 +4,7 @@ use Spatie\Dns\Support\Types;
 
 beforeAll(function () {
     // Define DNS type constants not available in PHP by default
-    // https://bugs.php.net/bug.php?id=65343
+    // @see https://bugs.php.net/bug.php?id=65343
     define('DNS_DS', 2097152);
     define('DNS_DNSKEY', 4194304);
 });
